@@ -234,65 +234,68 @@
 
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="HTML5">
               <i class="devicons devicons-html5"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="CSS3">
               <i class="devicons devicons-css3"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="JavaScript">
               <i class="devicons devicons-javascript"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
+              <i class="devicons devicons-jquery" data-toggle="popover" data-content="JQuery"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="SASS">
               <i class="devicons devicons-sass"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="Less">
               <i class="devicons devicons-less"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="Bootstrap">
               <i class="devicons devicons-bootstrap"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="WordPress">
               <i class="devicons devicons-wordpress"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="PHP">
               <i class="devicons devicons-php"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="Laravel">
               <i class="devicons devicons-laravel"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="MySQL">
               <i class="devicons devicons-mysql"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="DataBase">
               <i class="devicons devicons-database"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="AngularJS">
               <i class="devicons devicons-angular"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="GitHub">
               <i class="devicons devicons-github"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="Java">
               <i class="devicons devicons-java"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="Windows">
               <i class="devicons devicons-windows"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="Linux">
               <i class="devicons devicons-linux"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="Ubuntu">
               <i class="devicons devicons-ubuntu"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="Apple">
               <i class="devicons devicons-apple"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="popover" data-content="AWS">
               <i class="devicons devicons-aws"></i>
+            </li>
+            <li class="list-inline-item" data-toggle="popover" data-content="Android">
+              <i class="devicons devicons-android"></i>
             </li>
             
           </ul>
@@ -318,6 +321,9 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
+
+          <div class="subheading mb-3"> <a target="_blank" href="http://csse.usc.edu/ucc_new/wordpress/">Unified Code Count(2018)(Java/C++/)<a></div>
+          <p>Develop automation test program such as Robot Framework, unit test and fix bugs for UCC-Java and UCC-C/C++.</p>
 
           <div class="subheading mb-3"> <a target="_blank" href="https://zhou990.wixsite.com/nottoday">Not Today! - Mobile Tower Defense Game(2018)(Unity/C#)<a></div>
           <p>Create Tower Defense Game with 3D VR headset and FPS feature</p>
@@ -385,12 +391,21 @@
 
     </div>
 
+    
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();   
+      });
+    </script>
+
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
